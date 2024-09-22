@@ -1,0 +1,19 @@
+program suhu;
+uses crt;
+
+var
+celcius, fahrenheit, kelvin, reamur : real;
+
+begin
+clrscr;
+writeln('Program konversi suhu dari celcius ke reamur, fahreinheit, dan kelvin');
+write('Masukan suhu dalam celcius : ');
+readln(celcius);
+reamur := celcius *4/5;
+Fahrenheit := (celcius *9/5) + 32;
+Kelvin := celcius + 273.15;
+
+writeln('Suhu dalam reamur: ', reamur:0:2);
+writeln('Suhu dalam fahrenheit: ', fahrenheit:0:2);
+writeln('Suhu dalam kelvin: ', kelvin:0:2);
+end.
