@@ -1,0 +1,20 @@
+program Lapangansepakbola;
+uses crt;
+
+var
+  panjang, lebar, luas, keliling: integer;
+
+begin
+  clrscr;
+  writeln('Input');
+  write('Panjang : '); readln(panjang);
+  write('Lebar : '); readln(lebar);
+
+  luas := panjang * lebar; 
+  keliling := 2 * (panjang + lebar);
+  
+  writeln('');
+  writeln('Output');
+  writeln('Luas lapangan: ', luas, ' meter');
+  writeln('Keliling lapangan: ', keliling, ' meter');
+end.
