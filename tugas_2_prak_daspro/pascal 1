@@ -1,0 +1,26 @@
+program menghitung_jumlah_gaji;
+uses crt;
+
+var
+  nama: string;
+  harilembur, haritidakbekerja: integer;
+  gajipokok, gajilembur, potongangaji, gajitotal: longint;
+
+begin
+  clrscr;
+  writeln('Input');
+
+  write('Nama karyawan : '); readln(nama);
+  write('Gaji pokok : '); readln(gajipokok);
+  write('Lembur (hari) : '); readln(harilembur);
+  write('Tidak bekerja (hari) : '); readln(haritidakbekerja);
+
+  gajilembur := 150000 * hariLembur;
+  potongangaji := 30000 * haritidakbekerja;
+  gajitotal := gajipokok + gajilembur - potongangaji;
+
+  writeln('');
+  writeln('Output');
+  writeln('Gaji Total : Rp ', gajitotal);
+  readln;
+end.
